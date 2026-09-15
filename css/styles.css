@@ -3,13 +3,19 @@
     margin: 0;
     padding: 0;
 }
+body {
+    margin: 0;
+ }
 
-ol, ul, li {
-    list-style-type: none;
+ul, ol {
+   padding: 0;
+ }
+li {
+   list-style-type: none; 
 }
 
-a {
-    text-decoration: none;
+a { 
+  text-decoration: none; color: #000; 
 }
 
 .product {
@@ -28,4 +34,16 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+
+main{
+    display: flex;
+}
+
+.masvendidos {
+    display: flex;
+}
+
+.aleatorios {
+    display: flex;
 }
