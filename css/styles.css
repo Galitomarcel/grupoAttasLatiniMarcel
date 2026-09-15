@@ -24,9 +24,6 @@ a {
     flex-wrap: nowrap;
 }
 
-.fotos {
-}
-
 .interesar {
     display: flex;
     flex-direction: column;
