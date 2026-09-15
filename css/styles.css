@@ -11,3 +11,21 @@ ol, ul, li {
 a {
     text-decoration: none;
 }
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.interesar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.reseñas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
