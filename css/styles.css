@@ -53,3 +53,11 @@ main{
 .aleatorios {
     display: flex;
 }
+
+.fotos {
+    width: 290px;
+}
+
+.relojinteres {
+    width: 150px;
+}
