@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <header class="header">
+        <a href=""><img src="" alt="">logo</a>
+            <form action="./search-results.html">
+                <input type="text" placeholder="Buscar relojes" name="busqueda">
+                <button type="submit">BUSCAR</button>
+            </form>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="./index.html">Home</a></li> 
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="product">
         <img src="./img/daytona.png" alt="HERO Daytona">
         <article>
@@ -33,9 +47,10 @@
                 <a class="ver" href="">VER MÁS PRODUCTOS</a>
         </article>
     </section>
-    <section>
-        <article>
-            <h2>CUSTOMER REVIEWS</h2>
+    <section class="reviews">
+        <h2>CUSTOMER REVIEWS</h2>
+        <div class="rev">
+            <article>
             <h3>★★★★★</h3>
             <p>“El reloj es absolutamente hermoso. La esfera verde se ve incluso mejor en persona.”</p>
             <p>Lucas M.</p>
@@ -53,6 +68,7 @@
             <p>Martín G.</p>
             <p>28/07/2026</p>
         </article>
+        </div>
     </section>
     <section class="interesar">
         <h2>También te podría interesar</h2>

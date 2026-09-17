@@ -24,6 +24,14 @@ a {
     flex-wrap: nowrap;
 }
 
+.product img {
+    width: 500px;
+}
+
+.product article {
+    width: 50%;
+}
+
 .interesar {
     display: flex;
     flex-direction: column;
@@ -34,12 +42,35 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.reseñas article {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.rev {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .category {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 main{
@@ -61,3 +92,31 @@ main{
 .relojinteres {
     width: 150px;
 }
+
+.men {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.MENS {
+    font-size: 52px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.explora {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.category article{
+    width: 23%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
