@@ -18,6 +18,22 @@ a {
   text-decoration: none; color: #000; 
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #102820;
+}
+.nav-header ul{
+    display: flex;
+}
+.texto1{
+    color: white;
+    padding: 0px 5px;
+}
+.logo {
+    width: 90px;
+}
 .product {
     display: flex;
     flex-direction: row;
@@ -75,10 +91,16 @@ a {
 
 main{
     display: flex;
+    background-color: #F3EFE6;
 }
 
-.masvendidos {
+.masvendidos{
     display: flex;
+    flex-wrap: wrap;
+}
+.masvendidos article{
+    width: 25%;
+    padding: 10px 10px; 
 }
 
 .aleatorios {
@@ -114,9 +136,24 @@ main{
 
 .category article{
     width: 23%;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 10px;
+    margin: 10px;
 }
-
+.sitio-footer{
+    background-color: #102820;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.sitio-footer a{
+    color: white;
+}
+.integrantes{
+    display: flex;
+}
+.integrantes li{
+    padding: 0px 5px;
+}
