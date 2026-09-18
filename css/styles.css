@@ -157,3 +157,7 @@ main{
 .integrantes li{
     padding: 0px 5px;
 }
+
+.category article h2 {
+    font-size: 22px;
+}
