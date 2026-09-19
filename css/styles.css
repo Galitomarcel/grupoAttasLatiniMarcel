@@ -187,6 +187,8 @@ main{
 .masvendidos article{
     width: 25%;
     padding: 10px 10px; 
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
 }
 
 .aleatorios {
