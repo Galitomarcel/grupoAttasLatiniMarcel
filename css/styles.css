@@ -38,6 +38,13 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.product article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .product img {
@@ -46,6 +53,18 @@ a {
 
 .product article {
     width: 50%;
+}
+
+.descripcion {
+    margin-top: 10px;
+}
+
+.caracteristicas {
+    margin-top: 10px;
+}
+
+.tags {
+    margin-top: 10px;
 }
 
 .interesar {
@@ -134,29 +153,65 @@ main{
     margin-bottom: 60px;
 }
 
-.category article{
+.category article {
     width: 23%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 10px;
     margin: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
 }
 .sitio-footer{
     background-color: #102820;
     color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
 }
 .sitio-footer a{
     color: white;
+    margin: 5px;
 }
-.integrantes{
+.integrantes {
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
 .integrantes li{
     padding: 0px 5px;
 }
 .category article h2 {
     font-size: 22px;
+    font-family: Georgia;
+    color: #111111;
 }
+
+.sitio-footer div h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.sitio-footer div p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.nav-footer {
+    display: flex;
+    margin-bottom: 25px;
+    
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
