@@ -39,6 +39,7 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 50px 0px;
 }
 
 .product article {
@@ -48,11 +49,51 @@ a {
 }
 
 .product img {
-    width: 500px;
+    width: 600px;
+    margin-right: 70px;
 }
 
 .product article {
     width: 50%;
+}
+
+.product h1 {
+    font-size: 40px;
+    color: #102820;
+    margin-bottom: 15px;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product ul {
+    margin-bottom: 10px;
+}
+
+.product li {
+    margin-bottom: 5px;
+}
+
+.product .ver {
+    background-color: #18352D;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.marca {
+    font-size: 17px;
+    font-weight:normal;
+    margin-bottom: 7px;
+}
+
+.precioo {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .descripcion {
@@ -85,6 +126,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
 }
 
 .reviews {
@@ -99,6 +146,26 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.rev article {
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+}
+
+.rev h3 {
+    color: #C6A15B;
+}
+
+.interesar h2 {
+    text-align: center;
+    color: #102820;
+    margin-bottom: 20px;
 }
 
 .category {
