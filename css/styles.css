@@ -179,7 +179,18 @@ main{
     display: flex;
     background-color: #F3EFE6;
 }
-
+.categorias{
+    width: 70%;
+    padding: 10px;
+}
+.categoriasul{
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+}
+.categoriasul li{
+    padding: 5px 10px;
+    margin-top: 5px;
+}
 .masvendidos{
     display: flex;
     flex-wrap: wrap;
@@ -284,3 +295,30 @@ main{
 }
 
 
+h1{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+p{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 90px;
+  font-style: normal;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
