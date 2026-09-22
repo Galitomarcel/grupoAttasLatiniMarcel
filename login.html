@@ -5,8 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
+
+    <header class="header_log">
+        <div class="cont_header_log">
+            <a href="./index.html" class="Header_logo">HERO</a>
+            <nav class="header_nav">
+                <a href="./index.html">Home</a>
+                <a href="./login.html">Login</a>
+                <a href="./register.html">Registro</a>
+            </nav>
+            <form action="./search-results.html" method="get" class="header_serch">
+                <input type="text" name="q" placeholder="Buscar" aria-label="Buscar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <section class="login_sec">
+        <div class="contenedor_login">
+            <h2 class="loginh2">Bienvenido devuelta</h2>
+            <p class="login_subtitle">Ingrese su cuenta de Hero Watches</p>
+
+            <form action="./index.html" method="post" class="Login_form">
+                <div class="form_grupo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="ingrese su email" required>
+                </div>
+                <div class="form_grupo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="contraseña" id="password" placeholder="ingrese su contraseña" required>
+                </div>
+                <div class="form_grupo checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" name="recordarme" value="1">
+                        <span> Recordarme</span>
+                    </label>
+                </div>
+                <button type="submit" class="button_submit">Iniciar sesion</button>
+            </form>
+        </div>
+        <div class="login_footer">
+            <p>¿No tenes cuenta?</p>
+            <a href="./register.html" class="link_register"> Crear una cuenta </a>
+        </div>
+    </section>
+
    <footer class="sitio-footer">
         <div class="container-footer">
             <h2 class="logo">HERO</h2>
