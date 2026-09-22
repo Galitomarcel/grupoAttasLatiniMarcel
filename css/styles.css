@@ -24,6 +24,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #102820;
+    padding: 10px 35px;
 }
 .nav-header ul{
     display: flex;
