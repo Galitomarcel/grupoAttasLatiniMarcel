@@ -53,11 +53,6 @@ a {
     flex-wrap: nowrap;
 }
 
-.product img {
-    width: 605px;
-    margin-right: 70px;
-}
-
 .product article {
     width: 50%;
 }
@@ -201,6 +196,7 @@ a {
 
 .principal {
     border: 1px solid #D9D4C8;
+    width: 600px;
     border-radius: 8px;
 }
 
@@ -261,6 +257,32 @@ main{
 
 .relojinteres {
     width: 150px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+}
+
+.principal {
+    width: 600px;
+    margin-right: 25px;
+}
+
+.comlpemento {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between
+}
+
+
+.comlpemento img {
+    width: 90px;
+    margin-right: 10px;
+    border: 1px solid #D9D4C8;
 }
 
 .men {
