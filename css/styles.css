@@ -227,10 +227,16 @@ main{
     flex-wrap: wrap;
 }
 .masvendidos article{
-    width: 25%;
+    width: 24%;
     padding: 10px 10px; 
     border: 1px solid #D9D4C8;
     border-radius: 8px;
+    margin: 6px;
+}
+
+.busqueda {
+    display: flex;
+    flex-direction: column;
 }
 
 .aleatorios {
