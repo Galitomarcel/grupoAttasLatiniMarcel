@@ -207,6 +207,10 @@ main{
 }
 
 .fotos {
+    width: 270px;
+}
+
+.foto {
     width: 290px;
 }
 
