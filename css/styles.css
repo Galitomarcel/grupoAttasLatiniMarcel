@@ -5,6 +5,7 @@
 }
 body {
     margin: 0;
+    background-color: #F3EFE6;
  }
 
 ul, ol {
@@ -32,7 +33,7 @@ a {
     padding: 0px 5px;
 }
 .logo {
-    width: 90px;
+    width: 130px;
 }
 .product {
     display: flex;
@@ -40,6 +41,7 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
     padding: 50px 0px;
+    background-color: #F3EFE6;
 }
 
 .product article {
@@ -58,7 +60,7 @@ a {
 }
 
 .product h1 {
-    font-size: 40px;
+    font-size: 42px;
     color: #102820;
     margin-bottom: 15px;
 }
@@ -89,15 +91,31 @@ a {
     font-size: 17px;
     font-weight:normal;
     margin-bottom: 7px;
+    color: #555555;
+}
+
+.stock {
+    font-size: 17x;
+    font-weight: normal;
+    color: #555555;
+    margin-bottom: 7px;
 }
 
 .precioo {
     font-size: 30px;
     margin-bottom: 10px;
+    color: #102820;
+    font-family: "Raleway", sans-serif;
 }
 
 .descripcion {
     margin-top: 10px;
+    margin-bottom: 8px;
+    color: #102820;
+}
+
+.diseño {
+    color: #555555;;
 }
 
 .caracteristicas {
@@ -112,6 +130,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    background-color: #F3EFE6;
 }
 
 .reseñas {
@@ -126,7 +145,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #FFFFFF;
     border: 1px solid #D9D4C8;
     border-radius: 8px;
@@ -140,19 +159,24 @@ a {
     flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 40px;
+    background-color: #F3EFE6;
+}
+
+.reviews h2{
+    color: #102820;
 }
 
 .rev {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .rev article {
     width: 30%;
     padding: 20px;
-    margin: 20px;
     background-color: #FFFFFF;
     border: 1px solid #D9D4C8;
     border-radius: 8px;
@@ -168,11 +192,17 @@ a {
     margin-bottom: 20px;
 }
 
+.principal {
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+}
+
 .category {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 main{
@@ -213,6 +243,10 @@ main{
 }
 
 .fotos {
+    width: 270px;
+}
+
+.foto {
     width: 290px;
 }
 
@@ -301,7 +335,7 @@ main{
 }
 
 
-h1{
+h1 {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300px;
