@@ -25,14 +25,16 @@ a {
     align-items: center;
     background-color: #102820;
     padding: 10px 35px;
+    border-bottom: 4px solid #C6A15B;
 }
 .nav-header ul{
     display: flex;
 }
 .texto1{
     color: white;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
+
 .logo {
     width: 130px;
 }
@@ -52,7 +54,7 @@ a {
 }
 
 .product img {
-    width: 600px;
+    width: 605px;
     margin-right: 70px;
 }
 
@@ -79,12 +81,16 @@ a {
     margin-bottom: 5px;
 }
 
-.product .ver {
+.ve {
     background-color: #18352D;
     color: white;
     padding: 10px 18px;
     margin-top: 15px;
     border-radius: 5px;
+}
+
+.hero {
+    margin-top: 10px;
 }
 
 
@@ -215,7 +221,9 @@ main{
     padding: 10px;
 }
 .categoriasul{
-    border: 1px solid #D9D4C8;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #C6A15B;
     border-radius: 8px;
 }
 .categoriasul li{
@@ -265,13 +273,13 @@ main{
 .MENS {
     font-size: 52px;
     letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .explora {
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .category article {
@@ -293,6 +301,7 @@ main{
     align-items: center;
     text-align: center;
     padding: 40px 20px;
+    border-top: 4px solid #C6A15B;
 }
 .sitio-footer a{
     color: white;
@@ -309,8 +318,12 @@ main{
 }
 .category article h2 {
     font-size: 22px;
-    font-family: Georgia;
     color: #111111;
+    margin-top: 10px;
+}
+
+.ver {
+    margin-bottom: 10px;
 }
 
 .sitio-footer div h2 {
@@ -335,31 +348,56 @@ main{
     margin-bottom: 20px;
 }
 
-
 h1 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+    color: #102820;
+}
+
+.heroo, h1{
+  font-family: "Bodoni Moda", serif;
   font-weight: 300px;
   font-style: normal;
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100px;
   font-style: normal;
 }
 
 p{
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "DM Sans", sans-serif;
   font-weight: 90px;
   font-style: normal;
 }
 
+h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+}
+
 a {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "DM Sans", sans-serif;
   font-weight: 100px;
   font-style: normal;
+}
+
+.header form{
+    display: flex;
+    align-items: center;
+}
+
+.header input{
+    width: 180px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.header button{
+    padding: 8px 12px;
+    border: none;
+    background-color: #C6A15B;
+    color: #102820;
+    border-radius: 0px 4px 4px 0px;
 }
