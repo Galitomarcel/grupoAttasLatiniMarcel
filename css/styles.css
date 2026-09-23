@@ -425,12 +425,11 @@ main{
 .sitio-footer div p {
     font-size: 14px;
     letter-spacing: 3px;
-    margin-bottom: 25px;
 }
 
 .nav-footer {
     display: flex;
-    margin-bottom: 25px;
+    margin-top: 15px;
     
 }
 
