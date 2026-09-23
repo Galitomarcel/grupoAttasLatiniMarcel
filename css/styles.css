@@ -235,11 +235,39 @@ main{
     flex-wrap: wrap;
 }
 .masvendidos article{
-    width: 24%;
+    width: 23%;
     padding: 10px 10px; 
     border: 1px solid #D9D4C8;
     border-radius: 8px;
     margin: 6px;
+    background-color:#EEEAE2;
+}
+
+.masvendidos h2 {
+    color: #102820;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.masvendidos h3 {
+    color: #102820;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.desc {
+    color: #555555;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.vermas {
+    display: block;
+    text-align: center;
+    border: 1px solid #C6A15B;
+    padding: 10px;
+    margin-top: 15px;
+    color: #102820;
+    font-size: 15px;
 }
 
 .busqueda {
@@ -251,12 +279,17 @@ main{
     display: flex;
 }
 
+.clasicos {
+    color:#C6A15B;;
+}
+
 .fotos {
     width: 270px;
 }
 
 .foto {
-    width: 290px;
+    width: 280px;
+    border-radius: 3px;
 }
 
 .relojinteres {
@@ -428,12 +461,11 @@ main{
 .sitio-footer div p {
     font-size: 14px;
     letter-spacing: 3px;
-    margin-bottom: 25px;
 }
 
 .nav-footer {
     display: flex;
-    margin-bottom: 25px;
+    margin-top: 15px;
     
 }
 
