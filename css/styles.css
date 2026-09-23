@@ -304,6 +304,75 @@ main{
     margin-bottom: 40px;
 }
 
+.banner {
+    background-image:url(../img/fondotalvez.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.banner div {
+    margin-right: 500px;
+    margin-top: 100px;
+}
+
+.banner h1 {
+    color: #F3EFE6;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #F3EFE6;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.banner a {
+    background-color: #C6A15B;
+    color: #102820;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.marcas {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.marcas h2 {
+    color: #102820;
+    margin-bottom: 25px;
+}
+
+.marcas-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.marcas article {
+    width: 22%;
+    padding: 30px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+}
+
+.marcas article h3 {
+    color: #102820;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.marcas article a {
+   color: #C6A15B; 
+}
+
 .category article {
     width: 23%;
     display: flex;
