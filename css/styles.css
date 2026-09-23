@@ -349,9 +349,8 @@ main{
     margin-bottom: 25px;
 }
 
-.marcas-contenedor {
+.marcascontenedor{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
