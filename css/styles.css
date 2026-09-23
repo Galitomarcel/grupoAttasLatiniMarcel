@@ -527,3 +527,87 @@ a {
     color: #102820;
     border-radius: 0px 4px 4px 0px;
 }
+.login_sec{
+    padding: 80px 20px;
+    width: 100%;
+}
+.contenedor_login{
+    background-color: #FFFFFF;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+.loginh2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 26px;
+    color: #18352D;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.login_subtitle{
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.Login_form{
+    text-align: left;
+}
+.login_footer{
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #F3EFE6;
+    font-size: 13px;
+    color: #777777;
+}
+.link_register{
+    color: #18352D;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+}
+.section_reg{
+    padding: 60px 20px;
+    width: 100%;
+}
+.contenedor_reg{
+    background-color: #FFFFFF;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+.h2_reg{
+    font-family: "DM Sans", sans-serif;
+    font-size: 26px;
+    color: #18352D;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.subtitulo_reg{
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.reg_form{
+    text-align: left;
+}
+.grupof{
+    margin-bottom: 20px;
+}
+.btn-submmit{
+    width: 100%;
+    background-color: #18352D;
+    color: #F3EFE6;
+    border: none;
+    padding: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
