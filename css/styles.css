@@ -24,14 +24,17 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #102820;
+    padding: 10px 35px;
+    border-bottom: 4px solid #C6A15B;
 }
 .nav-header ul{
     display: flex;
 }
 .texto1{
     color: white;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
+
 .logo {
     width: 130px;
 }
@@ -48,11 +51,6 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-}
-
-.product img {
-    width: 600px;
-    margin-right: 70px;
 }
 
 .product article {
@@ -78,12 +76,16 @@ a {
     margin-bottom: 5px;
 }
 
-.product .ver {
+.ve {
     background-color: #18352D;
     color: white;
     padding: 10px 18px;
     margin-top: 15px;
     border-radius: 5px;
+}
+
+.hero {
+    margin-top: 10px;
 }
 
 
@@ -194,6 +196,7 @@ a {
 
 .principal {
     border: 1px solid #D9D4C8;
+    width: 600px;
     border-radius: 8px;
 }
 
@@ -214,7 +217,9 @@ main{
     padding: 10px;
 }
 .categoriasul{
-    border: 1px solid #D9D4C8;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #C6A15B;
     border-radius: 8px;
 }
 .categoriasul li{
@@ -254,6 +259,32 @@ main{
     width: 150px;
 }
 
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+}
+
+.principal {
+    width: 600px;
+    margin-right: 25px;
+}
+
+.comlpemento {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between
+}
+
+
+.comlpemento img {
+    width: 90px;
+    margin-right: 10px;
+    border: 1px solid #D9D4C8;
+}
+
 .men {
     display: flex;
     flex: wrap;
@@ -264,13 +295,82 @@ main{
 .MENS {
     font-size: 52px;
     letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .explora {
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+}
+
+.banner {
+    background-image:url(../img/fondotalvez.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.banner div {
+    margin-right: 500px;
+    margin-top: 100px;
+}
+
+.banner h1 {
+    color: #F3EFE6;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #F3EFE6;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.banner a {
+    background-color: #C6A15B;
+    color: #102820;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.marcas {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.marcas h2 {
+    color: #102820;
+    margin-bottom: 25px;
+}
+
+.marcas-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.marcas article {
+    width: 22%;
+    padding: 30px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+}
+
+.marcas article h3 {
+    color: #102820;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.marcas article a {
+   color: #C6A15B; 
 }
 
 .category article {
@@ -292,6 +392,7 @@ main{
     align-items: center;
     text-align: center;
     padding: 40px 20px;
+    border-top: 4px solid #C6A15B;
 }
 .sitio-footer a{
     color: white;
@@ -308,8 +409,12 @@ main{
 }
 .category article h2 {
     font-size: 22px;
-    font-family: Georgia;
     color: #111111;
+    margin-top: 10px;
+}
+
+.ver {
+    margin-bottom: 10px;
 }
 
 .sitio-footer div h2 {
@@ -334,31 +439,56 @@ main{
     margin-bottom: 20px;
 }
 
-
 h1 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+    color: #102820;
+}
+
+.heroo, h1{
+  font-family: "Bodoni Moda", serif;
   font-weight: 300px;
   font-style: normal;
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100px;
   font-style: normal;
 }
 
 p{
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "DM Sans", sans-serif;
   font-weight: 90px;
   font-style: normal;
 }
 
+h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+}
+
 a {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "DM Sans", sans-serif;
   font-weight: 100px;
   font-style: normal;
+}
+
+.header form{
+    display: flex;
+    align-items: center;
+}
+
+.header input{
+    width: 180px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.header button{
+    padding: 8px 12px;
+    border: none;
+    background-color: #C6A15B;
+    color: #102820;
+    border-radius: 0px 4px 4px 0px;
 }
