@@ -231,7 +231,7 @@ main{
     flex-wrap: wrap;
 }
 .masvendidos article{
-    width: 24%;
+    width: 23%;
     padding: 10px 10px; 
     border: 1px solid #D9D4C8;
     border-radius: 8px;
@@ -252,7 +252,7 @@ main{
 }
 
 .foto {
-    width: 290px;
+    width: 280px;
 }
 
 .relojinteres {
