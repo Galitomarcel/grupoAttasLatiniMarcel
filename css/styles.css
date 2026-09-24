@@ -555,6 +555,22 @@ a {
 .Login_form{
     text-align: left;
 }
+.form_grupo{
+    margin-bottom: 20px;
+     border-radius: 5px;
+}
+.btn_submmit{
+    width: 100%;
+    background-color: #18352D;
+    color: #F3EFE6;
+    border: none;
+    padding: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
 .login_footer{
     margin-top: 25px;
     padding-top: 20px;
@@ -599,6 +615,7 @@ a {
 }
 .grupof{
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 .btn-submmit{
     width: 100%;
@@ -610,4 +627,5 @@ a {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
+    border-radius: 5px;
 }
