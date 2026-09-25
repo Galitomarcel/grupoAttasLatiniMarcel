@@ -242,6 +242,8 @@ main{
 .masvendidos{
     display: flex;
     flex-wrap: wrap;
+    border-top: 3px solid #C6A15B;
+    justify-content: center;
 }
 .masvendidos article{
     width: 23%;
