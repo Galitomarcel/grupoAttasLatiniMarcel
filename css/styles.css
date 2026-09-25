@@ -3,23 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     margin: 0;
     background-color: #F3EFE6;
- }
+}
 
-ul, ol {
-   padding: 0;
- }
+ul,
+ol {
+    padding: 0;
+}
+
 li {
-   list-style-type: none; 
+    list-style-type: none;
 }
 
-a { 
-  text-decoration: none; color: #000; 
+a {
+    text-decoration: none;
+    color: #000;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +31,12 @@ a {
     padding: 10px 35px;
     border-bottom: 4px solid #C6A15B;
 }
-.nav-header ul{
+
+.nav-header ul {
     display: flex;
 }
-.texto1{
+
+.texto1 {
     color: white;
     padding: 0px 10px;
 }
@@ -38,6 +44,7 @@ a {
 .logo {
     width: 130px;
 }
+
 .product {
     display: flex;
     flex-direction: row;
@@ -92,7 +99,7 @@ a {
 
 .marca {
     font-size: 17px;
-    font-weight:normal;
+    font-weight: normal;
     margin-bottom: 7px;
     color: #555555;
 }
@@ -176,7 +183,7 @@ a {
     background-color: #F3EFE6;
 }
 
-.reviews h2{
+.reviews h2 {
     color: #102820;
 }
 
@@ -219,39 +226,45 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    
+
 }
 
-main{
+main {
     display: flex;
     background-color: #F3EFE6;
 }
-.categorias{
+
+.categorias {
     width: 70%;
     padding: 10px;
 }
-.categorias1{
+
+.categorias1 {
     width: 20%;
     padding: 10px;
 }
-.categoriasul{
+
+.categoriasul {
     margin-top: 10px;
     background-color: #FFFFFF;
     border: 1px solid #C6A15B;
     border-radius: 8px;
 }
-.categoriasul li{
+
+.categoriasul li {
     padding: 5px 10px;
     margin-top: 5px;
 }
-.masvendidos{
+
+.masvendidos {
     display: flex;
     flex-wrap: wrap;
     border-top: 3px solid #C6A15B;
 }
-.masvendidos article{
+
+.masvendidos article {
     width: 23%;
-    padding: 10px 10px; 
+    padding: 10px 10px;
     border: 1px solid #D9D4C8;
     border-radius: 8px;
     margin: 6px;
@@ -270,6 +283,7 @@ main{
     font-size: 20px;
     margin-top: 10px;
 }
+
 .desc {
     color: #555555;
     margin-top: 10px;
@@ -295,7 +309,8 @@ main{
 }
 
 .clasicos {
-    color:#C6A15B;;
+    color: #C6A15B;
+    ;
 }
 
 .fotos {
@@ -357,7 +372,7 @@ main{
 }
 
 .banner {
-    background-image:url(../img/fondotalvez.png);
+    background-image: url(../img/fondotalvez.png);
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -401,7 +416,7 @@ main{
     margin-bottom: 25px;
 }
 
-.marcascontenedor{
+.marcascontenedor {
     display: flex;
     justify-content: space-around;
 }
@@ -424,7 +439,7 @@ main{
 }
 
 .marcas article a {
-   color: #C6A15B; 
+    color: #C6A15B;
 }
 
 .category article {
@@ -438,7 +453,8 @@ main{
     border: 1px solid #D9D4C8;
     border-radius: 8px;
 }
-.sitio-footer{
+
+.sitio-footer {
     background-color: #102820;
     color: white;
     display: flex;
@@ -448,19 +464,22 @@ main{
     padding: 40px 20px;
     border-top: 4px solid #C6A15B;
 }
-.sitio-footer a{
+
+.sitio-footer a {
     color: white;
     margin: 5px;
 }
+
 .integrantes {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.integrantes li{
+.integrantes li {
     padding: 0px 5px;
 }
+
 .category article h2 {
     font-size: 22px;
     color: #111111;
@@ -484,7 +503,7 @@ main{
 .nav-footer {
     display: flex;
     margin-top: 15px;
-    
+
 }
 
 .copyright {
@@ -496,22 +515,23 @@ h1 {
     color: #102820;
 }
 
-.heroo, h1{
-  font-family: "Bodoni Moda", serif;
-  font-weight: 300px;
-  font-style: normal;
+.heroo,
+h1 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 300px;
+    font-style: normal;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100px;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
 }
 
-p{
-  font-family: "DM Sans", sans-serif;
-  font-weight: 90px;
-  font-style: normal;
+p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 90px;
+    font-style: normal;
 }
 
 h3 {
@@ -521,35 +541,37 @@ h3 {
 }
 
 a {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 100px;
-  font-style: normal;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
 }
 
-.header form{
+.header form {
     display: flex;
     align-items: center;
 }
 
-.header input{
+.header input {
     width: 180px;
     padding: 8px 10px;
     border: none;
     border-radius: 4px 0px 0px 4px;
 }
 
-.header button{
+.header button {
     padding: 8px 12px;
     border: none;
     background-color: #C6A15B;
     color: #102820;
     border-radius: 0px 4px 4px 0px;
 }
-.login_sec{
+
+.login_sec {
     padding: 80px 20px;
     width: 100%;
 }
-.contenedor_login{
+
+.contenedor_login {
     background-color: #FFFFFF;
     padding: 40px;
     width: 100%;
@@ -558,26 +580,31 @@ a {
     text-align: center;
     border: 1px solid #e0e0e0;
 }
-.loginh2{
+
+.loginh2 {
     font-family: "DM Sans", sans-serif;
     font-size: 26px;
     color: #18352D;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
-.login_subtitle{
+
+.login_subtitle {
     color: #777777;
     font-size: 14px;
     margin-bottom: 30px;
 }
-.Login_form{
+
+.Login_form {
     text-align: left;
 }
-.form_grupo{
+
+.form_grupo {
     margin-bottom: 20px;
-     border-radius: 5px;
+    border-radius: 5px;
 }
-.btn_submmit{
+
+.btn_submmit {
     width: 100%;
     background-color: #18352D;
     color: #F3EFE6;
@@ -589,25 +616,29 @@ a {
     letter-spacing: 2px;
     border-radius: 5px;
 }
-.login_footer{
+
+.login_footer {
     margin-top: 25px;
     padding-top: 20px;
     border-top: 1px solid #F3EFE6;
     font-size: 13px;
     color: #777777;
 }
-.link_register{
+
+.link_register {
     color: #18352D;
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
     margin-top: 5px;
 }
-.section_reg{
+
+.section_reg {
     padding: 60px 20px;
     width: 100%;
 }
-.contenedor_reg{
+
+.contenedor_reg {
     background-color: #FFFFFF;
     padding: 40px;
     width: 100%;
@@ -616,26 +647,31 @@ a {
     text-align: center;
     border: 1px solid #e0e0e0;
 }
-.h2_reg{
+
+.h2_reg {
     font-family: "DM Sans", sans-serif;
     font-size: 26px;
     color: #18352D;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
-.subtitulo_reg{
+
+.subtitulo_reg {
     color: #777777;
     font-size: 14px;
     margin-bottom: 30px;
 }
-.reg_form{
+
+.reg_form {
     text-align: left;
 }
-.grupof{
+
+.grupof {
     margin-bottom: 20px;
     border-radius: 5px;
 }
-.btn-submmit{
+
+.btn-submmit {
     width: 100%;
     background-color: #18352D;
     color: #F3EFE6;
@@ -653,4 +689,14 @@ a {
     padding: 20px;
     text-align: center;
     margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .banner {
+        display: none;
+    }
+
+    .masvendidos article {
+        width: 100%;
+    }
 }
