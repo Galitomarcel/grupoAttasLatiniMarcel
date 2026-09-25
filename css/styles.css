@@ -51,6 +51,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin-right: 10px;
 }
 
 .product article {
@@ -133,6 +134,7 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: #F3EFE6;
+    border-top: 3px solid #C6A15B;
 }
 
 .reseñas {
@@ -147,12 +149,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #FFFFFF;
     border: 1px solid #D9D4C8;
     border-radius: 8px;
     margin-bottom: 20px;
 
+}
+
+.logos {
+    width: 215px;
+    margin-bottom: 20px;
 }
 
 .reviews {
@@ -191,7 +198,9 @@ a {
 .interesar h2 {
     text-align: center;
     color: #102820;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    margin-top: 20px;
 }
 
 .principal {
@@ -241,6 +250,7 @@ main{
     border-radius: 8px;
     margin: 6px;
     background-color:#EEEAE2;
+    text-align: center;
 }
 
 .masvendidos h2 {
@@ -392,11 +402,14 @@ main{
 }
 
 .marcas article {
-    width: 22%;
-    padding: 30px 10px;
+    width: 24%;
+    padding: 35px 10px;
     background-color: #FFFFFF;
     border: 1px solid #D9D4C8;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .marcas article h3 {
