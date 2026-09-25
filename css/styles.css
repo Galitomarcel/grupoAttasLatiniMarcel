@@ -247,7 +247,10 @@ main{
 .masvendidos{
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
     border-top: 3px solid #C6A15B;
+=======
+>>>>>>> fd99b7f774aa9603dcace9207f2722e6fb2d93d9
 }
 .masvendidos article{
     width: 23%;
@@ -288,7 +291,6 @@ main{
 
 .busqueda {
     display: flex;
-    flex-direction: column;
 }
 
 .aleatorios {
