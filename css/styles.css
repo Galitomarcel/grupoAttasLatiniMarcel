@@ -28,7 +28,8 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #102820;
-    padding: 10px 35px;
+    padding: 10px 100px;
+    width: 100%;
     border-bottom: 4px solid #C6A15B;
 }
 
@@ -695,8 +696,40 @@ a {
     .banner {
         display: none;
     }
-
-    .masvendidos article {
+    .header{
+      width: 100%;
+    }
+    .footer{
         width: 100%;
     }
+    body{
+        width: 100%;
+    }
+
+    .categorias1 {
+        width: 100% ;
+        margin-bottom: 20px ;
+     }
+
+    .categorias {
+         width: 100% ;
+    }
+    .masvendidos,
+    .category {
+        display: flex ;
+        flex-direction: column ; 
+        align-items: center ;
+        width: 100% ;
+    }
+
+
+    .masvendidos article,
+    .category article {
+        width: 100% ; 
+        max-width: 480px ; 
+        margin: 10px 0 ;
+        box-sizing: border-box ;
+    }
 }
+
+
