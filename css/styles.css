@@ -642,3 +642,10 @@ a {
     letter-spacing: 2px;
     border-radius: 5px;
 }
+
+.titulo{
+    border-top: 3px solid #C6A15B;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
