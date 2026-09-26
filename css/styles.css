@@ -74,7 +74,6 @@ a {
 
 .product p {
     font-size: 16px;
-    line-height: 1.5;
 }
 
 .product ul {
@@ -120,8 +119,7 @@ a {
 }
 
 .descripcion {
-    margin-top: 10px;
-    margin-bottom: 8px;
+    margin: 10px 0 8px 0;
     color: #102820;
 }
 
@@ -362,8 +360,7 @@ main {
 .MENS {
     font-size: 52px;
     letter-spacing: 2px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 30px 0 10px 0;
 }
 
 .explora {
