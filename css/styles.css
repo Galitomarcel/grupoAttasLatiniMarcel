@@ -26,6 +26,9 @@ a {
     background-color: #102820;
     padding: 10px 35px;
     border-bottom: 4px solid #C6A15B;
+
+    width: 100%;
+    box-sizing: border-box;
 }
 .nav-header ul{
     display: flex;
@@ -653,4 +656,176 @@ a {
     padding: 20px;
     text-align: center;
     margin-top: 10px;
+}
+
+
+
+@media (max-width: 992px) {
+    .banner div {
+        margin-right: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+ 
+    .masvendidos article {
+        width: calc(50% - 12px);
+    }
+ 
+    .marcas article,
+    .category article {
+        width: calc(50% - 20px);
+    }
+ 
+    .product {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+ 
+    .product article,
+    .galeria,
+    .principal {
+        width: 100%;
+        max-width: 600px;
+        margin-right: 0;
+    }
+ 
+    .rev,
+    .reseñas {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+ 
+    .rev article,
+    .reseñas article {
+        width: 45%;
+    }
+}
+ 
+/* --- Celular grande --- */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+ 
+    .header form {
+        flex: none;           /* en columna, flex-basis sería ALTO */
+        width: 100%;
+        max-width: none;
+    }
+ 
+    main {
+        flex-direction: column;
+    }
+ 
+    .categorias,
+    .categorias1 {
+        width: 100%;
+        min-width: 0;
+    }
+ 
+    /* categorías como fila deslizable en lugar de columna larga */
+    .categoriasul {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+ 
+    .categoriasul li {
+        margin-top: 0;
+    }
+ 
+    .banner {
+        height: 350px;
+    }
+ 
+    .banner div {
+        margin-top: 60px;
+    }
+ 
+    .banner h1 {
+        font-size: 34px;
+    }
+ 
+    .marcas {
+        padding: 30px 15px;
+    }
+}
+ 
+/* --- Celular chico --- */
+@media (max-width: 480px) {
+    .banner {
+        display: none;
+    }
+ 
+    .masvendidos article,
+    .marcas article,
+    .category article,
+    .rev article,
+    .reseñas article {
+        width: 100%;
+        margin: 6px 0;
+    }
+ 
+    .product h1 {
+        font-size: 30px;
+    }
+ 
+    .MENS {
+        font-size: 36px;
+    }
+ 
+    .nav-footer,
+    .integrantes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* ===== RESPONSIVE: base ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header form {
+    flex: 1 1 220px;
+    max-width: 400px;
+}
+
+.header input {
+    flex: 1;
+    min-width: 0;
+}
+
+.categorias {
+    width: 20%;
+    min-width: 170px;
+}
+
+.productos,
+main > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.marcascontenedor {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.comlpemento {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.comlpemento img {
+    margin-right: 0;
 }
