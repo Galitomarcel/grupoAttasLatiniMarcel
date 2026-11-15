@@ -1,3 +1,4 @@
+//7.b Saludo y modificación de menú.
 let login = document.querySelector("#login")
 let register = document.querySelector("#register")
 let bienvenida = document.querySelector("#bienvenido")
