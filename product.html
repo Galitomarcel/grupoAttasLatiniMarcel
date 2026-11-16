@@ -25,9 +25,11 @@
             <img class="logo" src="./img/LOGOHERO.png" alt="logo">
         </a>
         <form action="./search-results.html" class="formbusqueda" method="get">
-            <input type="text" placeholder="Buscar relojes" name="busqueda" class="busqueda">
-            <button type="submit">BUSCAR</button>
-            <p class="mensajeerror"></p>
+            <div class="busca">
+                <input type="text" placeholder="Buscar relojes" name="busqueda" class="busqueda">
+                <button type="submit">BUSCAR</button>
+            </div>
+            <p class="texto1" id="mensajeerror"></p>
         </form>
         <nav class="nav-header">
             <ul>
@@ -35,7 +37,7 @@
                 <li><a class="texto1" href="./index.html">Home </a></li>
                 <li><a class="texto1" id="login" href="./login.html">Login </a></li>
                 <li><a class="texto1" id="register" href="./register.html">Register</a></li>
-                <li class="logout"></li>
+                <li id="logout"></li>
             </ul>
         </nav>
     </header>
@@ -185,6 +187,7 @@
     </footer>
     <script src="./js/product.js"></script>
     <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
 </body>
 
 </html>
