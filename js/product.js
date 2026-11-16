@@ -1,6 +1,6 @@
 let formheader = document.querySelector(".formbusqueda")
 let inputheader = document.querySelector(".busqueda")
-let mensajeerror = document.querySelector(".mensajeerror")
+let mensajeerror = document.querySelector("#mensajeerror")
 //consigna 2, header y footer
 formheader.addEventListener("submit", function(event){
 

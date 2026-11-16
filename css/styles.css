@@ -701,3 +701,18 @@ a {
     font-family: "DM Sans", sans-serif;
     color: #C6A15B;
 }
+
+.formbusqueda {
+    display: flex;
+    flex-direction: column;
+}
+
+.busca {
+    display: flex;
+}
+
+#mensajeerror {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #C6A15B;
+}
