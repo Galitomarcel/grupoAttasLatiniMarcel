@@ -286,6 +286,35 @@ main {
     margin-top: 10px;
 }
 
+.masvendidos1 {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 3px solid #C6A15B;
+}
+
+.masvendidos1 article {
+    width: 23%;
+    padding: 10px 10px;
+    border: 1px solid #D9D4C8;
+    border-radius: 8px;
+    margin: 6px;
+    background-color:#EEEAE2;
+    text-align:  center;
+}
+
+.masvendidos1 h2 {
+    color: #102820;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.masvendidos1 h3 {
+    color: #102820;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
 .desc {
     color: #555555;
     margin-top: 10px;
