@@ -1,0 +1,14 @@
+//7.b Saludo y modificación de menú.
+let login = document.querySelector("#login")
+let register = document.querySelector("#register")
+let bienvenida = document.querySelector("#bienvenido")
+let logout = document.querySelector(".logout")
+
+let emailusuario = localStorage.getItem("email")
+
+if (emailusuario != null) {
+    login.style.display = "none"
+    register.style.display = "none"
+    bienvenida.innerText = "Bienvenido " + emailusuario
+    logout.innerHTML = '<a class ="texto1">Logout</a>'
+}

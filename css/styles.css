@@ -696,3 +696,8 @@ a {
         display: none;
     }
 }
+
+#bienvenido {
+    font-family: "DM Sans", sans-serif;
+    color: #C6A15B;
+}
