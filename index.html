@@ -23,10 +23,11 @@
         <a href="./index.html">
             <img class="logo" src="./img/LOGOHERO.png" alt="logo">
         </a>
-        <form action="./search-results.html">
-            <input type="text" placeholder="Buscar relojes" name="busqueda">
+        <form action="./search-results.html" method="get">
+            <input class="respuestabusqueda" type="text" placeholder="Buscar relojes" value="" name="busqueda">
             <button type="submit">BUSCAR</button>
         </form>
+        <p class="aviso"></p>
         <nav class="nav-header">
             <ul>
                 <li><a class="texto1" href="./index.html">Home </a></li>
@@ -350,6 +351,8 @@
             <a href="Contacto">Contacto</a>
         </div>
     </footer>
+
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
