@@ -69,6 +69,7 @@ fetch("https://dummyjson.com/products/category/womens-watches")
     })
 
 
+//traer las categorias a la barra de navegacion de la api
 fetch("https://dummyjson.com/products/category-list")
     .then(function (response) {
         return response.json()

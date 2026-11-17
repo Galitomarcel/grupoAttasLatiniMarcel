@@ -52,3 +52,26 @@ fetch("https://dummyjson.com/products/search?q=" + busqueda)
     .catch(function (error) {
         console.log(error)
     })
+
+    //traer las categorias a la barra de navegacion de la api
+
+    let contcategorias = document.querySelector(".categoriasul")
+
+    fetch("https://dummyjson.com/products/category-list")
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        let categorias = data        
+
+        for (let i = 0; i < categorias.length; i++) {
+            contcategorias.innerHTML += `
+                <li>
+                    <a href="category.html?categoria=${categorias[i]}">${categorias[i]}</a>
+                </li>
+                `
+        }
+    })
+    .catch(function (error) {
+        console.log(error)
+    })
