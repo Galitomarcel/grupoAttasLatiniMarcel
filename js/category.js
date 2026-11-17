@@ -29,11 +29,39 @@ fetch("https://dummyjson.com/products/category-list")
         for (let i = 0; i < categorias.length; i++) {
             contcategorias.innerHTML += `
                 <li>
-                    <a href="category.html?categoria=${categorias[i]}">${categorias[i]}</a>
+                    <a href="./category.html?categoria=${categorias[i]}">${categorias[i]}</a>
                 </li>
             `
         }
     })
+    
     .catch(function (error) {
+        console.log(error)
+    })
+
+    let queryString = location.search
+    let queryStringObj = new URLSearchParams(queryString)
+    let categoria = queryStringObj.get("categoria")
+
+    fetch("https://dummyjson.com/products/category/" + categoria)
+    .then (function(response) { 
+        return response.json()
+    })
+    .then (function (data) {
+        let productos = data.products
+        let contenedor = document.querySelector(".category")
+
+        for (let i =0; i<productos.length; i++) {
+            contenedor.innerHTML += `
+            <article>
+            <h2>${productos[i].title}</h2>
+            <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
+            <a href="./product.html?id=${productos[i].id}">Ver detalle</a>
+        </article>
+            `
+        }
+
+    })
+    .catch (function(error) {
         console.log(error)
     })
