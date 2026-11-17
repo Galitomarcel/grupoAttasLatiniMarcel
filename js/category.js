@@ -42,6 +42,8 @@ fetch("https://dummyjson.com/products/category-list")
     let queryString = location.search
     let queryStringObj = new URLSearchParams(queryString)
     let categoria = queryStringObj.get("categoria")
+    let titulo = document.querySelector(".MENS")
+    titulo.innerText = categoria
 
     fetch("https://dummyjson.com/products/category/" + categoria)
     .then (function(response) { 
