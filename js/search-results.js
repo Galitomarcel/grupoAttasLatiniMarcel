@@ -1,7 +1,14 @@
 let formheader = document.querySelector(".formbusqueda")
 let inputheader = document.querySelector(".busqueda")
 let mensajeerror = document.querySelector("#mensajeerror")
-//consigna 2, header y footer
+
+let resultado = document.querySelector(".explora")
+let queryString = location.search
+let queryStringObj = new URLSearchParams(queryString)
+let busqueda = queryStringObj.get("busqueda")
+
+let contenedor2 = document.querySelector(".masvendidos")
+
 formheader.addEventListener("submit", function(event){
 
     event.preventDefault()
@@ -15,3 +22,33 @@ formheader.addEventListener("submit", function(event){
         formheader.submit()
     }
 })
+
+resultado.innerText = "Resultados de busqueda para: " + busqueda
+
+
+fetch("https://dummyjson.com/products/search?q=" + busqueda)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        let productos = data.products         
+
+        if (productos.length == 0) {
+            resultado.innerText = "No hay resultados para el término: " + busqueda
+
+        } else {
+            for (let i = 0; i < productos.length; i++) {
+                contenedor2.innerHTML += `
+                    <article class="tarjeta">
+                        <img class="fotos" src="${productos[i].thumbnail}" alt="${productos[i].title}">
+                        <h2>${productos[i].title}</h2>
+                        <h3>$${productos[i].price}</h3>
+                        <a class="vermas" href="product.html?id=${productos[i].id}">Ver detalle</a>
+                    </article>`
+            }
+        }
+
+    })
+    .catch(function (error) {
+        console.log(error)
+    })

@@ -5,6 +5,8 @@ let mensajeerror = document.querySelector("#mensajeerror")
 let contenedor = document.querySelector(".masvendidos") //productos articul
 let contenedor1 = document.querySelector(".masvendidos1") //productos articul
 
+let contcategorias = document.querySelector(".categoriasul") //api de categorias
+
 formheader.addEventListener("submit", function(event){
 
     event.preventDefault()
@@ -21,11 +23,11 @@ formheader.addEventListener("submit", function(event){
 
 
 fetch("https://dummyjson.com/products/category/mens-watches")
-    .then(function (res) {
-        return res.json()
+    .then(function (response) {
+        return response.json()
     })
-    .then(function (datos) {
-        let productos = datos.products          // ← esto es lo que recorrés
+    .then(function (data) {
+        let productos = data.products         
 
         for (let i = 0; i < productos.length; i++) {
             contenedor.innerHTML += `
@@ -43,13 +45,12 @@ fetch("https://dummyjson.com/products/category/mens-watches")
         console.log(error)
     })
 
-
 fetch("https://dummyjson.com/products/category/womens-watches")
-    .then(function (res) {
-        return res.json()
+    .then(function (response) {
+        return response.json()
     })
-    .then(function (datos) {
-        let productos = datos.products          // ← esto es lo que recorrés
+    .then(function (data) {
+        let productos = data.products          
 
         for (let i = 0; i < productos.length; i++) {
             contenedor1.innerHTML += `
@@ -60,6 +61,26 @@ fetch("https://dummyjson.com/products/category/womens-watches")
                     <h3>$${productos[i].price}</h3>
                     <a class="vermas" href="product.html?id=${productos[i].id}">VER DETALLE</a>
                 </article>
+                `
+        }
+    })
+    .catch(function (error) {
+        console.log(error)
+    })
+
+
+fetch("https://dummyjson.com/products/category-list")
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        let categorias = data        
+
+        for (let i = 0; i < categorias.length; i++) {
+            contcategorias.innerHTML += `
+                <li>
+                    <a href="category.html?categoria=${categorias[i]}">${categorias[i]}</a>
+                </li>
                 `
         }
     })
