@@ -782,3 +782,12 @@ a {
     margin-bottom: 12px;
     text-align: center;
 }
+#mensajelogin{
+     color: #d93025;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+}
