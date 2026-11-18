@@ -773,3 +773,12 @@ a {
     font-size: 13px;
     color: #C6A15B;
 }
+#error-registro {
+    color: #d93025;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+}
