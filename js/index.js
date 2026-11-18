@@ -40,6 +40,18 @@ fetch("https://dummyjson.com/products/category/mens-watches")
                 </article>
                 `
         }
+         let ver = document.querySelectorAll(".vermas")
+         for (let i = 0; i<ver.length; i++) {
+            ver[i].addEventListener("mouseover", function() {
+            ver[i].style.backgroundColor = "#18352D"
+            ver[i].style.color = "white"
+            
+            ver[i].addEventListener("mouseout", function() {
+            ver[i].style.backgroundColor = ""
+            ver[i].style.color = ""
+        })
+        })
+    }
     })
     .catch(function (error) {
         console.log(error)
@@ -63,6 +75,18 @@ fetch("https://dummyjson.com/products/category/womens-watches")
                 </article>
                 `
         }
+         let ver = document.querySelectorAll(".vermas")
+         for (let i = 0; i<ver.length; i++) {
+        ver[i].addEventListener("mouseover", function() {
+            ver[i].style.backgroundColor = "#18352D"
+            ver[i].style.color = "white"
+
+        ver[i].addEventListener("mouseout", function() {
+            ver[i].style.backgroundColor = ""
+            ver[i].style.color = ""
+        })
+        })
+    }
     })
     .catch(function (error) {
         console.log(error)
@@ -88,3 +112,6 @@ fetch("https://dummyjson.com/products/category-list")
     .catch(function (error) {
         console.log(error)
     })
+
+   
+    
