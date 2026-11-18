@@ -53,14 +53,20 @@ let conreviews = document.querySelector(".rev")
 let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
 let id = queryStringObj.get("id")
-
+let fotodeta1 = document.querySelector(".detalle1")
+let fotodeta2 = document.querySelector(".detalle2")
+let fotodeta3 = document.querySelector(".detalle3")
 
 fetch("https://dummyjson.com/products/" + id)
 .then (function(response) {
    return response.json()
 })
 .then (function(data) {
+    console.log(data)
    foto.src = data.thumbnail
+   fotodeta1.src = data.images[0]
+   fotodeta2.src = data.images[1]
+   fotodeta3.src = data.images[2]
    nombre.innerText = data.title
    marca.innerText = "Marca: " + data.brand
    categoria.innerHTML = `Categoría: <a href="./category.html?categoria=${data.category}">${data.category}</a>`

@@ -7,6 +7,9 @@ let contenedor1 = document.querySelector(".masvendidos1") //productos articul
 
 let contcategorias = document.querySelector(".categoriasul") //api de categorias
 
+let titulocat1 = document.querySelector("#menscat")
+let titulocat2 = document.querySelector("#womenscat")
+
 formheader.addEventListener("submit", function(event){
 
     event.preventDefault()
@@ -27,7 +30,8 @@ fetch("https://dummyjson.com/products/category/mens-watches")
         return response.json()
     })
     .then(function (data) {
-        let productos = data.products         
+        let productos = data.products 
+        titulocat1.innerText = productos[0].category        
 
         for (let i = 0; i < productos.length; i++) {
             contenedor.innerHTML += `
@@ -40,6 +44,8 @@ fetch("https://dummyjson.com/products/category/mens-watches")
                 </article>
                 `
         }
+      
+
          let ver = document.querySelectorAll(".vermas")
          for (let i = 0; i<ver.length; i++) {
             ver[i].addEventListener("mouseover", function() {
@@ -62,7 +68,8 @@ fetch("https://dummyjson.com/products/category/womens-watches")
         return response.json()
     })
     .then(function (data) {
-        let productos = data.products          
+        let productos = data.products   
+        titulocat2.innerText = productos[0].category          
 
         for (let i = 0; i < productos.length; i++) {
             contenedor1.innerHTML += `
