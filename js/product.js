@@ -60,6 +60,7 @@ fetch("https://dummyjson.com/products/" + id)
    return response.json()
 })
 .then (function(data) {
+   foto.src = data.thumbnail
    nombre.innerText = data.title
    marca.innerText = "Marca: " + data.brand
    categoria.innerHTML = `Categoría: <a href="./category.html?categoria=${data.category}">${data.category}</a>`
