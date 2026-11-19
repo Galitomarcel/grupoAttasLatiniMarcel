@@ -74,7 +74,7 @@ fetch("https://dummyjson.com/products/" + id)
    descripcion.innerText = data.description
    stock.innerText = "Stock: " + data.stock + " unidades disponibles"
    for (let i = 0; i<data.tags.length && i<3; i++) {
-    tags.innerHTML = `<li> # ${data.tags[i]} </li>`
+    tags.innerHTML += `<li> # ${data.tags[i]} </li>`
    }
    let reviews = data.reviews
    for (let i = 0; i<reviews.length; i++) {

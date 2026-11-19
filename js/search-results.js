@@ -42,6 +42,7 @@ fetch("https://dummyjson.com/products/search?q=" + busqueda)
                     <article class="tarjeta">
                         <img class="fotos" src="${productos[i].thumbnail}" alt="${productos[i].title}">
                         <h2>${productos[i].title}</h2>
+                        <p>${productos[i].description}</p>
                         <h3>$${productos[i].price}</h3>
                         <a class="vermas" href="product.html?id=${productos[i].id}">Ver detalle</a>
                     </article>`

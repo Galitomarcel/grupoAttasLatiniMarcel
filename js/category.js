@@ -58,6 +58,8 @@ fetch("https://dummyjson.com/products/category-list")
             <article>
             <h2>${productos[i].title}</h2>
             <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
+            <p>${productos[i].description}</p>
+            <h3>${productos[i].price}</h3>
             <a href="./product.html?id=${productos[i].id}">Ver detalle</a>
         </article>
             `
