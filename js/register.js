@@ -7,7 +7,7 @@ let errorRegistro = document.querySelector ("#error-registro")
 
 formRegistro.addEventListener("submit", function(event){
     event.preventDefault()
-    if (inputEmail.value == " "){
+    if (inputEmail.value == ""){
         errorRegistro.innerText = "Este campo es obligatorio"
     }
     else if (inputPassword.value == " "){
@@ -18,5 +18,7 @@ formRegistro.addEventListener("submit", function(event){
     }
     else if (inputPassword.value != inputRepetirPassword.value){
         errorRegistro.innerText = "Las contraseñas debe de coincidir"
+    }else {
+        formRegistro.submit()                          // NUEVO: si todo está bien, lo envía
     }
 })
