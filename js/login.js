@@ -1,7 +1,7 @@
 let formlogin = document.querySelector(".Login_form")
 let emaillogin = document.querySelector("#email")
 let passwordlogin = document.querySelector("#password")
-let mensajelogin = document.querySelector(".mensajelogin")
+let mensajelogin = document.querySelector("#mensajelogin")
 
 //punto 6 pagina login - 7.a Validación y guardado de datos en storage.
 formlogin.addEventListener("submit", function(event) {
