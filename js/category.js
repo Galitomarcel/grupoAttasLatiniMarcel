@@ -49,7 +49,7 @@ fetch("https://dummyjson.com/products/category-list")
     .then (function(response) { 
         return response.json()
     })
-    .then (function (data) {
+.then (function (data) {
         let productos = data.products
         let contenedor = document.querySelector(".category")
 
@@ -64,16 +64,19 @@ fetch("https://dummyjson.com/products/category-list")
                 </article>
             `
         }
-       vermas.addEventListener("mouseover", function () {
-        if (vermas.style.backgroundColor == "green") {
-            vermas.style.backgroundColor = ""
-        }
-        else {
-            vermas.style.backgroundColor = "green"
-        }
-
+        let ver = document.querySelectorAll(".vermas")
+         for (let i = 0; i<ver.length; i++) {
+            ver[i].addEventListener("mouseover", function() {
+            ver[i].style.backgroundColor = "#18352D"
+            ver[i].style.color = "white"
+            })
+            ver[i].addEventListener("mouseout", function() {
+            ver[i].style.backgroundColor = ""
+            ver[i].style.color = ""
+        })
+    }
     })
-    })
+    
     .catch (function(error) {
         console.log(error)
     })
