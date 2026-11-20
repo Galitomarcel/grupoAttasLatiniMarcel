@@ -64,7 +64,6 @@ fetch("https://dummyjson.com/products/category-list")
         </article>
             `
         }
-
     })
     .catch (function(error) {
         console.log(error)

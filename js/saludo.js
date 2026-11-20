@@ -9,6 +9,6 @@ let emailusuario = localStorage.getItem("email")
 if (emailusuario != null) {
     login.style.display = "none"
     register.style.display = "none"
-    bienvenida.innerText = "Bienvenido " + emailusuario
+    bienvenida.innerText = "Bienvenido : " + emailusuario
     logout.innerHTML = '<a class ="texto1" href="#">Logout</a>'
 }
