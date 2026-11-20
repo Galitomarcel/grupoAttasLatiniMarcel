@@ -47,6 +47,7 @@ let categoria = document.querySelector("#categoria")
 let precio = document.querySelector(".precioo")
 let foto = document.querySelector(".principal")
 let descripcion = document.querySelector("#descripcion")
+let mas = document.querySelector(".ve")
 let stock = document.querySelector(".stock")
 let tags = document.querySelector("#tags")
 let conreviews = document.querySelector(".rev")
@@ -73,8 +74,9 @@ fetch("https://dummyjson.com/products/" + id)
    precio.innerText = "Precio: $" + data.price
    descripcion.innerText = data.description
    stock.innerText = "Stock: " + data.stock + " unidades disponibles"
+   mas.innerHTML = ` <a class="ve" href="./category.html?categoria=${data.category}">VER MÁS PRODUCTOS</a>`
    for (let i = 0; i<data.tags.length && i<3; i++) {
-    tags.innerHTML = `<li> # ${data.tags[i]} </li>`
+    tags.innerHTML += `<li> # ${data.tags[i]} </li>`
    }
    let reviews = data.reviews
    for (let i = 0; i<reviews.length; i++) {
@@ -85,3 +87,6 @@ fetch("https://dummyjson.com/products/" + id)
 .catch (function(error) {
    console.log(error)
 })
+
+
+
