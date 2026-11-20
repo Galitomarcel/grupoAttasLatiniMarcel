@@ -55,15 +55,24 @@ fetch("https://dummyjson.com/products/category-list")
 
         for (let i =0; i<productos.length; i++) {
             contenedor.innerHTML += `
-            <article>
-            <h2>${productos[i].title}</h2>
-            <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-            <p>${productos[i].description}</p>
-            <h3>${productos[i].price}</h3>
-            <a href="./product.html?id=${productos[i].id}">Ver detalle</a>
-        </article>
+                <article>
+                    <img class="foto" src="${productos[i].thumbnail}" alt="${productos[i].title}">
+                    <h2>${productos[i].title}</h2>
+                    <p class="desc">${productos[i].description}</p>
+                    <h3>$${productos[i].price}</h3>
+                    <a class="vermas" href="./product.html?id=${productos[i].id}">VER DETALLE</a>
+                </article>
             `
         }
+       vermas.addEventListener("mouseover", function () {
+        if (vermas.style.backgroundColor == "green") {
+            vermas.style.backgroundColor = ""
+        }
+        else {
+            vermas.style.backgroundColor = "green"
+        }
+
+    })
     })
     .catch (function(error) {
         console.log(error)

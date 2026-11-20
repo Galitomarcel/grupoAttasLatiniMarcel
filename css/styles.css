@@ -748,7 +748,62 @@ a {
     text-align: center;
     margin-top: 10px;
 }
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.category article{
+    background-color: #f5f1e8;
+    border: 1px solid #e2dccf;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 22%;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.category article .foto{
+    width: 180px;
+    height: auto;
+    margin: 0 auto 12px auto;
+}
+.category article h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 10px;
+}
+.category article .desc{
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 14px;
+}
+.category article h3{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 14px;
+}
+.category article .vermas{
 
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #C6A15B;
+    padding: 10px;
+    margin-top: 15px;
+    color: #102820;
+    font-size: 15px;
+
+}
 @media (max-width: 480px) {
     .banner {
         display: none;
