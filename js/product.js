@@ -2,7 +2,7 @@ let formheader = document.querySelector(".formbusqueda")
 let inputheader = document.querySelector(".busqueda")
 let mensajeerror = document.querySelector("#mensajeerror")
 //consigna 2, header y footer
-formheader.addEventListener("submit", function(event){
+formheader.addEventListener("submit", function (event) {
 
     event.preventDefault()
     if (inputheader.value == "") {
@@ -24,7 +24,7 @@ fetch("https://dummyjson.com/products/category-list")
         return response.json()
     })
     .then(function (data) {
-        let categorias = data  
+        let categorias = data
 
         for (let i = 0; i < categorias.length; i++) {
             contcategorias.innerHTML += `
@@ -38,7 +38,7 @@ fetch("https://dummyjson.com/products/category-list")
         console.log(error)
     })
 
-    //
+//
 
 
 let nombre = document.querySelector("#nombre")
@@ -59,34 +59,54 @@ let fotodeta2 = document.querySelector(".detalle2")
 let fotodeta3 = document.querySelector(".detalle3")
 
 fetch("https://dummyjson.com/products/" + id)
-.then (function(response) {
-   return response.json()
-})
-.then (function(data) {
-    console.log(data)
-   foto.src = data.thumbnail
-   fotodeta1.src = data.images[0]
-   fotodeta2.src = data.images[1]
-   fotodeta3.src = data.images[2]
-   nombre.innerText = data.title
-   marca.innerText = "Marca: " + data.brand
-   categoria.innerHTML = `Categoría: <a href="./category.html?categoria=${data.category}">${data.category}</a>`
-   precio.innerText = "Precio: $" + data.price
-   descripcion.innerText = data.description
-   stock.innerText = "Stock: " + data.stock + " unidades disponibles"
-   mas.innerHTML = ` <a class="ve" href="./category.html?categoria=${data.category}">VER MÁS PRODUCTOS</a>`
-   for (let i = 0; i<data.tags.length && i<3; i++) {
-    tags.innerHTML += `<li> # ${data.tags[i]} </li>`
-   }
-   let reviews = data.reviews
-   for (let i = 0; i<reviews.length; i++) {
-    conreviews.innerHTML += ` <article> <h3>${reviews[i].rating} ★</h3>
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log(data)
+        foto.src = data.thumbnail
+        foto.alt = data.title
+
+        if (data.images[0]) {
+            fotodeta1.src = data.images[0]
+            fotodeta1.alt = data.title
+        } else {
+            fotodeta1.style.display = "none"
+        }
+
+        if (data.images[1]) {
+            fotodeta2.src = data.images[1]
+            fotodeta2.alt = data.title
+        } else {
+            fotodeta2.style.display = "none"
+        }
+
+        if (data.images[2]) {
+            fotodeta3.src = data.images[2]
+            fotodeta3.alt = data.title
+        } else {
+            fotodeta3.style.display = "none"
+        }
+
+        nombre.innerText = data.title
+        marca.innerText = "Marca: " + data.brand
+        categoria.innerHTML = `Categoría: <a href="./category.html?categoria=${data.category}">${data.category}</a>`
+        precio.innerText = "Precio: $" + data.price
+        descripcion.innerText = data.description
+        stock.innerText = "Stock: " + data.stock + " unidades disponibles"
+        mas.innerHTML = ` <a class="ve" href="./category.html?categoria=${data.category}">VER MÁS PRODUCTOS</a>`
+        for (let i = 0; i < data.tags.length && i < 3; i++) {
+            tags.innerHTML += `<li> # ${data.tags[i]} </li>`
+        }
+        let reviews = data.reviews
+        for (let i = 0; i < reviews.length; i++) {
+            conreviews.innerHTML += ` <article> <h3>${reviews[i].rating} ★</h3>
       <p>${reviews[i].comment}</p> <p>${reviews[i].reviewerName}</p> <p>${reviews[i].date}</p> </article>`
-   }
-})
-.catch (function(error) {
-   console.log(error)
-})
+        }
+    })
+    .catch(function (error) {
+        console.log(error)
+    })
 
 
 
